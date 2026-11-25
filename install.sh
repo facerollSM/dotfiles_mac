@@ -24,7 +24,7 @@ grep -rlF "__HOME__" "$C/rift" "$C/sketchybar" "$C/kitty" "$C/borders" "$C/launc
 chmod +x "$C"/sketchybar/sketchybarrc "$C"/sketchybar/plugins/*.sh "$C"/launcher/*.sh "$C"/borders/bordersrc
 
 echo "SketchyBar-Helfer bauen …"
-for s in "$C"/sketchybar/helpers/*.swift; do swiftc -O "$s" -o "${s%.swift}"; done
+for s in "$C"/sketchybar/helpers/*.swift "$C"/launcher/*.swift; do swiftc -O "$s" -o "${s%.swift}"; done
 
 [[ " $* " == *" --macos "* ]] && ./macos/keyboard.sh && ./macos/animations.sh
 

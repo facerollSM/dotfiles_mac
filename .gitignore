@@ -3,3 +3,4 @@ sketchybar/helpers/*
 !sketchybar/helpers/*.swift
 *.bak*
 .DS_Store
+launcher/close_window
