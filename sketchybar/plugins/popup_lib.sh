@@ -43,7 +43,7 @@ popup_row() {
 
 # popup_style <parent>  (einmalig in sketchybarrc)
 popup_style() {
-  $SB --set "$1" popup.align=right popup.y_offset=4 \
+  $SB --set "$1" popup.align=right popup.y_offset=4 popup.height=26 \
                  popup.background.color=$BG1 \
                  popup.background.corner_radius=9 \
                  popup.background.border_color=0xff504945 \

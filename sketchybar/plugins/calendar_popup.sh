@@ -3,13 +3,19 @@
 source "$CONFIG_DIR/plugins/popup_lib.sh"
 SELF="$CONFIG_DIR/plugins/calendar_popup.sh"
 
+# SketchyBar kürzt Leerzeichen am Zeilenanfang. Daher bekommt jede Zeile eine feste Breite
+# (= eine volle Woche) und die erste Woche wird rechtsbündig gesetzt, damit die Spalten passen.
+ROW_W=155
+
 fill() {
   local i=0
   popup_row clock today 󰃭 "$(LC_TIME=de_DE.UTF-8 date '+%A, %-d. %B %Y')" "" $YELLOW
-  popup_row clock wd "" "  Mo Di Mi Do Fr Sa So" "" $GRAY
+  popup_row clock wd "" "Mo Di Mi Do Fr Sa So" "" $GRAY
+  $SB --set clock.p.wd label.width=$ROW_W label.padding_left=32 >/dev/null
   # Wochenzeilen; die aktuelle Woche wird gelb hervorgehoben
   while IFS='|' read -r is_now line; do
-    popup_row clock w$i "" "  $line" "" "$([ "$is_now" = 1 ] && echo $YELLOW || echo $FG)"
+    popup_row clock w$i "" "$line" "" "$([ "$is_now" = 1 ] && echo $YELLOW || echo $FG)"
+    $SB --set clock.p.w$i label.width=$ROW_W label.padding_left=32 label.align=$([ $i = 0 ] && echo right || echo left) >/dev/null
     i=$((i + 1))
   done < <(/usr/bin/python3 - <<'PY'
 import calendar, datetime
