@@ -30,8 +30,8 @@ case "$SENDER" in
     mkdir "$LOCK" 2>/dev/null || exit 0
     trap 'rmdir "$LOCK"' EXIT
     CUR="$(osascript -e 'output volume of (get volume settings)')"
-    STEP=$(( DIR * 5 ))   # 5 % pro Scroll-Schritt
-    NEW=$(( CUR + STEP ))
+    # Wie die Lautstärketasten: 16 Stufen à 6,25 %, immer auf einer Stufe einrasten
+    NEW=$(/usr/bin/python3 -c "print(round((round($CUR / 6.25) + $DIR) * 6.25))")
     (( NEW < 0 )) && NEW=0
     (( NEW > 100 )) && NEW=100
     osascript -e "set volume output volume $NEW"
