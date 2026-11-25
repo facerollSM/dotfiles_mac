@@ -7,13 +7,30 @@ fi
 
 case "$SENDER" in
   mouse.scrolled)
+    # Richtung bestimmen; Ereignisse ohne Bewegung (Delta 0, kommen beim Auslaufen) ignorieren –
+    # die wurden früher als „leiser“ gewertet und sorgten für das Hoch/Runter-Springen.
+    case "$SCROLL_DELTA" in
+      ""|0|0.0|-0|-0.0) exit 0 ;;
+      -*) DIR=-1 ;;
+      *)  DIR=1 ;;
+    esac
+
+    # Richtungswechsel innerhalb von 0,6 s ignorieren (Trackpad federt am Ende kurz zurück)
+    STATE=/tmp/sketchybar-volume-dir
+    NOW=$(perl -MTime::HiRes=time -e 'printf "%d", time*1000')
+    if [ -f "$STATE" ]; then
+      read -r LASTDIR LASTT < "$STATE"
+      if [ "$DIR" != "$LASTDIR" ] && [ $(( NOW - LASTT )) -lt 600 ]; then exit 0; fi
+    fi
+    echo "$DIR $NOW" > "$STATE"
+
     # Nur ein Schritt gleichzeitig: Trackpad-Wischen erzeugt viele Ereignisse auf einmal,
-    # parallel laufende Skripte würden sich sonst gegenseitig überschreiben (hoch/runter-Springen).
+    # parallel laufende Skripte würden sich sonst gegenseitig überschreiben.
     LOCK=/tmp/sketchybar-volume.lock
     mkdir "$LOCK" 2>/dev/null || exit 0
     trap 'rmdir "$LOCK"' EXIT
     CUR="$(osascript -e 'output volume of (get volume settings)')"
-    STEP=$(( SCROLL_DELTA > 0 ? 3 : -3 ))   # 3 % pro Scroll-Schritt
+    STEP=$(( DIR * 3 ))   # 3 % pro Scroll-Schritt
     NEW=$(( CUR + STEP ))
     (( NEW < 0 )) && NEW=0
     (( NEW > 100 )) && NEW=100
