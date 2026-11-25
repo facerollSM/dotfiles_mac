@@ -137,7 +137,7 @@ comb1 = "Ctrl + Shift"
 # Apps starten
 "Ctrl + R" = { exec = "open -n -a Kitty" }
 "Ctrl + Space" = { exec = "__HOME__/.config/launcher/launcher.sh" }   # physisch ⌥+Leertaste: rofi-artiger Launcher
-"Alt + CMD + S" = { exec = "open -n -a Safari --args -NewInstance" }
+"Alt + CMD + S" = { exec = "__HOME__/.config/launcher/safari_new_window.sh" }   # physisch ⌘+Strg+S: neues leeres Safari-Fenster
 
 # Fokus
 "Ctrl + left" = { move_focus = "left" }
