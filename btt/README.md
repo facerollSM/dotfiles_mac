@@ -1,15 +1,15 @@
 # BetterTouchTool
 
-`btt-preset.bttpreset` enthält alle Trigger (Trackpad-Gesten, Tastenkürzel, Finder-Regeln) und die allgemeinen BTT-Einstellungen.
-Die Lizenz ist **nicht** enthalten.
+`btt-preset.bttpreset` contains all triggers (trackpad gestures, keyboard shortcuts, Finder rules) and BTT's general settings.
+The license is **not** included.
 
-- **Einspielen:** Datei doppelklicken oder in BTT → Presets → Import.
-- **Aktualisieren:** in BTT → Presets → Export, als `btt/btt-preset.bttpreset` speichern, dann committen.
+- **Import:** double-click the file, or BTT → Presets → Import.
+- **Update:** BTT → Presets → Export, save as `btt/btt-preset.bttpreset`, then commit.
 
-Wichtige Kürzel (physische Tasten, nach dem Tastentausch):
-| Taste | Aktion |
+Key shortcuts (physical keys, after the modifier swap):
+| Key | Action |
 |---|---|
-| ⌥+Q | (deaktiviert – übernimmt jetzt Rift + launcher/close_window: schließt das Fenster, beim letzten Fenster App beenden – Safari/Finder laufen weiter) |
-| ⌥+E | Datei-Explorer (Terminal-Befehl) |
-| ⌘+Tab | BTT-Fenster-Umschalter (alle Apps) |
-| Strg+Tab / Strg+Shift+Tab | sendet Strg+Tab / Strg+Shift+Tab (Tabs wechseln) |
+| ⌥+Q | (disabled in BTT – handled by Rift + `launcher/close_window`: closes the window, quits the app on its last window; Safari/Finder keep running) |
+| ⌥+E | File explorer (terminal command) |
+| ⌘+Tab | BTT window switcher (all apps) |
+| Ctrl+Tab / Ctrl+Shift+Tab | sends Ctrl+Tab / Ctrl+Shift+Tab (switch tabs) |
