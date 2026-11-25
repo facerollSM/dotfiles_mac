@@ -1,0 +1,1099 @@
+{
+  "BTTPresetCreatorNotes" : "",
+  "BTTPresetInfoURL" : "",
+  "BTTPresetName" : "Default",
+  "BTTPresetColor" : "97.759350, 250.665000, 232.826008, 255.000000",
+  "BTTGeneralSettings" : {
+    "BTTShowBTTWhenControlStripHidden" : true,
+    "BSTTopMissionControlTreshold" : 34,
+    "BTTNotchBarNotchWidgetModeShowMiniMenubar" : true,
+    "BTTDrawingAreaWidth" : 915,
+    "BSTLeftHalfBlock" : true,
+    "showMagicMouseTab" : true,
+    "BSTRightHalfBlock" : true,
+    "BSTSnapAreaDefaultHighlightColor" : "92.625563, 122.647995, 161.664347, 56.100000",
+    "BTTCMOnTop" : true,
+    "BTTFreeSpaceAfterBTT" : 20,
+    "BTTShowControlStrip" : true,
+    "disableScrollingIf3" : true,
+    "BSTMemorySaver" : true,
+    "BTTCopyImgurURLToClipboard" : true,
+    "BSTSnapAreaDefaultPictoDistanceFromLeft" : 0.10000000000000001,
+    "snapBottomRight" : true,
+    "BTTTouchBarAnimateGroups" : true,
+    "BTTNotchBarNotchMenubarModeHideRightScrollable" : true,
+    "BTTEnableUsageLogging" : true,
+    "BTTForcedHidden" : false,
+    "SIRIMouseSpeed" : 1,
+    "BTTForceNormalClickPressure" : 150,
+    "BTTForceForceClickPressure4F" : 650,
+    "SIRIScrollSpeed" : 1,
+    "BTTTouchBarFontSize" : 15,
+    "BTTNotchBarNotchWidgetModeHideLeftFixed" : false,
+    "BTTTouchBarHapticFeedbackRelease" : 0,
+    "SHOWEDHIDEMENUBARWARNING" : true,
+    "disableScrollingIf2" : true,
+    "BTTConvertedDevices" : true,
+    "tpThreeFingerDoubleTapDelay" : 0.5,
+    "BTTNoShortcutDelay" : true,
+    "BTTStageManagerIncrease" : true,
+    "BTTStageManagerLeaveGapEvenIfHiding" : false,
+    "BSTSnapAreaDefaultDashedBorder" : false,
+    "BTTAllowThumbIfAllFingersArePlacedSimultaneously" : true,
+    "BTTNotchBarNotchMenubarModeShowOriginalStatusIcons" : true,
+    "showDrawingsTab" : true,
+    "BTTTouchBarVisible" : false,
+    "BSTDontShowSnapAreasWhileModMoving" : 0,
+    "BTTDrawingAreaHeight" : 626,
+    "BTTNumberOfStarts" : 202,
+    "BTTTouchBarHapticFeedback" : 0,
+    "BTTStageManagerLeftSnappingAreaIncreasePercentage" : 0.125,
+    "showKeyboardTab" : true,
+    "snapBottomLeft" : true,
+    "BSTSnapAreaDefaultInvisible" : false,
+    "BTTDrawingRightMouse" : true,
+    "BTTMovePastedToTop" : true,
+    "BTTNotchBarStandardWidgetModeHideLeftFixed" : false,
+    "BSTWindowGrabPosX" : 67,
+    "BSTCornerRoundness" : 40,
+    "BTTForceNormalClickPressure5F" : 200,
+    "BTTNotchBarStandardMenubarModeHideLeftFixed" : true,
+    "BSTSnapAreaDefaultAnimationDuration" : 0.29999999999999999,
+    "showBTTRemoteTab" : true,
+    "BTTForceForceClickPressure3F" : 700,
+    "BTTHideFomControlStripWhenOpen" : false,
+    "mmZoomRepeatDelay" : 0.10000000000000001,
+    "BTTDefaultTBIconWidth" : 22,
+    "BTTTiltWheelDelay" : 0.45000000000000001,
+    "BTTNotchBarNotchWidgetModeShowOriginalStatusIcons" : false,
+    "BTTNotchBarNotchMenubarModeHideLeftScrollable" : true,
+    "BTTNotchBarNotchWidgetModeHideRightFixed" : false,
+    "showSiriRemoteTab" : true,
+    "BTTNotchBarStandardMenubarModeHideRightScrollable" : false,
+    "BTTIMGURDefault" : true,
+    "batteryWarning" : false,
+    "BTTNotchBarNotchMenubarModeHideLeftFixed" : true,
+    "BTTNotchBarShowOnStandardScreens" : true,
+    "BTTNotchBarStandardWidgetModeHideLeftScrollable" : false,
+    "BTTDismissIfNothingToShow" : true,
+    "BTTTouchBarMouseModeClickBlock" : true,
+    "snapTopLeft" : true,
+    "BTTForceNormalClickPressure4F" : 175,
+    "BTTMinDrawingMovement" : 2,
+    "snapTopRight" : true,
+    "BSTEnableEnhancementCheck" : true,
+    "BSTSnapAreaDefaultBorderWidth" : 3,
+    "BTTPathSampleSize" : 100,
+    "BSTSnapAreaDefaultBorderColor" : "0.000000, 0.000000, 0.000000, 255.000000",
+    "BSTSnapAreaDefaultCornerRadius" : 20,
+    "twoFingerDoubleTapDelay" : 0.5,
+    "BSTMoveTreshold" : 2,
+    "BTTStageManagerIncreaseEvenIfHiding" : true,
+    "BTTLastClamshellState" : false,
+    "BTTTwoFingerTipTapMinSpread" : 0.029999999999999999,
+    "showTouchBarTab" : true,
+    "BTTNotchBarNotchWidgetModeHideLeftScrollable" : false,
+    "BTTForceForceHapticResponse" : 13,
+    "BSTSnapAreaDefaultPictoSize" : 0.69999999999999996,
+    "cornerSnap" : true,
+    "BSTWindowGrabPosY" : 10,
+    "BTTForceNormalClickPressure3F" : 150,
+    "BTTNotchBarStandardWidgetModeHideRightFixed" : false,
+    "BTTTouchBarSupportEnabled" : true,
+    "BTTURLCleanerAutoClean" : true,
+    "BTTForceForceClickPressure2F" : 700,
+    "useAppleRemotePlugin" : false,
+    "BTRMouseSpeed" : 1,
+    "BTTUseNewUI" : true,
+    "BTTTouchBarKeepIconRatio" : true,
+    "BTTForceNormalHapticResponse" : 12,
+    "BTTFilterMagicMouseLeftRightEdge" : true,
+    "BSTBrokenAPICheckDelay" : 0.20000000000000001,
+    "BTTDefaultTBIconHeight" : 22,
+    "BTTDrawingStrokeWidth" : 4,
+    "BTTSelectedKeyboardTabIndex" : 0,
+    "BTRScrollSpeed" : 1,
+    "BTTMaxAllowedDrawingRotation" : 30,
+    "BTTTpFourFingerSwipeSensitivity" : 0.40000000000000002,
+    "BTTForceForceClickPressure" : 700,
+    "BTTEnablePalmRecognition" : true,
+    "BTTStageManagerLeftGapAbsolute" : false,
+    "BTTDontRestartAfterSleep" : true,
+    "BTTNotchBarStandardWidgetModeShowOriginalStatusIcons" : false,
+    "BTTForceNormalClickPressure2F" : 140,
+    "BTTThreeFingerTipTapMinSpread" : 0.029999999999999999,
+    "BTTNotchBarStandardMenubarModeHideLeftScrollable" : true,
+    "BTTDaysToKeepHistory" : 14,
+    "BTTTpThreeFingerSwipeSensitivity" : 0.29999999999999999,
+    "showTrackpadTab" : true,
+    "BTTStageManagerSnappingIncreaseAbsolute" : false,
+    "BTTNotchBarStandardWidgetModeHideRightScrollable" : false,
+    "BTTStageManagerLeftGapPercentage" : 0.10000000000000001,
+    "BTTNotchBarStandardMenubarModeHideRightFixed" : false,
+    "BTTFreeSpaceAfterESC" : 10,
+    "BTTNotchBarStandardMenubarModeShowOriginalStatusIcons" : true,
+    "BTTTouchBarUseMonoSpacedFont" : true,
+    "BTTNotchBarNotchWidgetModeHideRightScrollable" : false,
+    "BTTStageManagerLeftSnappingAreaIncrease" : 0,
+    "showOtherTriggersTab" : true,
+    "nextMonitorMoveWarningShowed" : true,
+    "BSTPreventTopMissionControl" : true,
+    "BTTDrawingsRestoreMousePosition" : true,
+    "singleFingerTapRight" : 0.050000000000000003,
+    "singleFingerTapLeft" : 0.45000000000000001,
+    "BTTDidRegisterForUpdateStats" : "6.1169",
+    "BTTHandleThumbsRestingOnTopEdgeAndCorners" : true,
+    "BSTBrokenAPICheckEnabled" : false,
+    "BTTDrawingsHighlightStartPoint" : true,
+    "BSTIncreaseSnappingArea" : true,
+    "BTTShowControlStripItem" : true,
+    "BTTAutoSwitchToOldKeyboardImplementation" : true,
+    "BTTStageManagerLeaveGap" : true,
+    "showNormalMiceTab" : true,
+    "BTTAlwaysShowPresetIndicators" : true,
+    "BTTShowESCWhenControlStripHidden" : true,
+    "BSTDisableSnapAreas" : false,
+    "BTTNotchBarNotchMenubarModeHideRightFixed" : true,
+    "BSTSnapAreaDefaultBackgroundColor" : "129.991390, 201.122858, 227.012328, 104.550000",
+    "BTTScreenshotOpenImgurInBrowser" : true,
+    "BTTForceForceClickPressure5F" : 600,
+    "BTTStageManagerLeftGap" : 0,
+    "BSTSnapAreaDefaultShowPictogram" : false,
+    "BSTSnapAreaDefaultPictoDistanceFromBottom" : 0.10000000000000001
+  },
+  "BTTPresetUUID" : "7F229D0B-0358-4F2E-95F1-15C3491EE2A5",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTAppSpecificSettings" : {
+        "BTTDisableGlobalTriggers" : false
+      },
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1775675539.8713379,
+          "BTTTriggerType" : 996,
+          "BTTTriggerTypeDescriptionReadOnly" : "Scroll Down",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "07203DEC-288C-43F3-9979-6BCF0C996E58",
+          "BTTEnabled" : 0,
+          "BTTRequiredModifierKeys" : 262144,
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764954269.810401,
+              "BTTTriggerParentUUID" : "07203DEC-288C-43F3-9979-6BCF0C996E58",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "7003A3CB-68F3-447A-847C-C1A18BD0E666",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute window resize-shrink",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1795602558.4850941,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "105779DD-42DF-438A-ACB0-36A6E4998D4D",
+          "BTTShortcutToSend" : "59,48",
+          "BTTAdditionalConfiguration" : "Strg+Tab_naechster_Tab",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTShortcutKeyCode" : 48,
+          "BTTShortcutAdvancedModifierKeys" : "Strg+Tab_naechster_Tab",
+          "BTTShortcutModifierKeys" : 1048576,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.38345,
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "68F14464-8643-41E9-AEF7-5F86F6F0A20C",
+          "BTTEnabled2" : 0,
+          "BTTOrder" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764346528.2392402,
+              "BTTTriggerParentUUID" : "68F14464-8643-41E9-AEF7-5F86F6F0A20C",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "8C1AE101-70B4-4D55-9266-202E443848F9",
+              "BTTPredefinedActionType" : 114,
+              "BTTPredefinedActionName" : "Move Right a Space",
+              "BTTOrder" : 1
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1795602557.195163,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "891FEEAF-D892-45ED-921F-7732888E067D",
+          "BTTShortcutToSend" : "59,56,48",
+          "BTTAdditionalConfiguration" : "Strg+Shift+Tab_vorheriger_Tab",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTShortcutKeyCode" : 48,
+          "BTTShortcutAdvancedModifierKeys" : "Strg+Shift+Tab_vorheriger_Tab",
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTLastUpdatedAt" : 1795602556.451138,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "9402EDF5-D8C6-4851-82CC-252E634CAE16",
+          "BTTPredefinedActionType" : 100,
+          "BTTPredefinedActionName" : "Show Window Switcher for All Open Apps",
+          "BTTAdditionalConfiguration" : "Cmd+Tab_App-Wechsel",
+          "BTTShortcutKeyboardType" : 0,
+          "BTTShortcutKeyCode" : 48,
+          "BTTShortcutAdvancedModifierKeys" : "Cmd+Tab_App-Wechsel",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.283519,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "F4162F69-0C77-4381-8F16-E9AEC5173320",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "1",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764350636.333632,
+              "BTTTriggerParentUUID" : "F4162F69-0C77-4381-8F16-E9AEC5173320",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "A40B8DCE-E15A-481E-9806-20C3494568D0",
+              "BTTPredefinedActionType" : 207,
+              "BTTPredefinedActionName" : "Switch To Desktop 1",
+              "BTTOrder" : 3
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834569,
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "0FE16756-DF35-495D-A974-BA438CCBAC7F",
+          "BTTEnabled2" : 0,
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764346651.475167,
+              "BTTTriggerParentUUID" : "0FE16756-DF35-495D-A974-BA438CCBAC7F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "12CB5408-9804-4E46-9DF6-12FFB50B0B91",
+              "BTTPredefinedActionType" : 113,
+              "BTTPredefinedActionName" : "Move Left a Space",
+              "BTTOrder" : 2
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834501,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "3097F9EB-727F-4A07-8B0A-3189460B004F",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "3",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 20,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 1,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764350666.9849339,
+              "BTTTriggerParentUUID" : "3097F9EB-727F-4A07-8B0A-3189460B004F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "F48F64C7-87EE-4499-BE25-93E8F9454277",
+              "BTTPredefinedActionType" : 209,
+              "BTTPredefinedActionName" : "Switch To Desktop 3",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1775675541.8057761,
+          "BTTTriggerType" : 997,
+          "BTTTriggerTypeDescriptionReadOnly" : "Scroll Up",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "7957FB37-63BD-4C8D-9A51-FF4A8459652E",
+          "BTTEnabled" : 0,
+          "BTTRequiredModifierKeys" : 262144,
+          "BTTOrder" : 1,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764954333.172823,
+              "BTTTriggerParentUUID" : "7957FB37-63BD-4C8D-9A51-FF4A8459652E",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "D4B8EB5E-F0F0-4FED-8E36-357EABB243EF",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute window resize-grow",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1775675543.540163,
+          "BTTTriggerType" : 996,
+          "BTTTriggerTypeDescriptionReadOnly" : "Scroll Down",
+          "BTTTriggerClass" : "BTTTriggerTypeNormalMouse",
+          "BTTUUID" : "133D5394-9BEF-4B63-B1F6-C2A1ACB9DB12",
+          "BTTEnabled" : 0,
+          "BTTRequiredModifierKeys" : 524288,
+          "BTTOrder" : 2,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764954421.7844939,
+              "BTTTriggerParentUUID" : "133D5394-9BEF-4B63-B1F6-C2A1ACB9DB12",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "DFB1B7D8-1596-42BB-AFC7-4ED478B554C9",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute layout toggle-orientation",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834119,
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "18B7D89C-F801-40A8-91EF-7C24F2BAA156",
+          "BTTOrder" : 2
+        },
+        {
+          "BTTLastUpdatedAt" : 1791966303.2767029,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "AF1FAA17-45F0-4320-A9B2-91DF65CADC0F",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "DOWN",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 125,
+          "BTTShortcutAdvancedModifierKeys" : "8388608",
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764350650.5871119,
+              "BTTTriggerParentUUID" : "AF1FAA17-45F0-4320-A9B2-91DF65CADC0F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "BFDB456B-C3E4-4636-9CC8-2F5E62CD030D",
+              "BTTPredefinedActionType" : 208,
+              "BTTPredefinedActionName" : "Switch To Desktop 2",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834229,
+          "BTTTriggerType" : 103,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Down",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "327A619D-C2E4-47A3-A648-C2ADF1B42C44",
+          "BTTOrder" : 3,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1793001408.468406,
+              "BTTTriggerParentUUID" : "327A619D-C2E4-47A3-A648-C2ADF1B42C44",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "E5A14E11-BBA6-409D-867C-C41B4CE27888",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/rift-cli execute workspace next",
+              "BTTOrder" : 14
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834949,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "59CFC0F9-60F3-46CD-91A3-3398142943B3",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "4",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 21,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 3,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764350679.1965861,
+              "BTTTriggerParentUUID" : "59CFC0F9-60F3-46CD-91A3-3398142943B3",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "4AB79F4D-91A8-455F-B491-6967C4B9F7AD",
+              "BTTPredefinedActionType" : 210,
+              "BTTPredefinedActionName" : "Switch To Desktop 4",
+              "BTTOrder" : 6
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834601,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "25D198E0-28CF-401F-ACA0-18034F04FBD5",
+          "BTTAdditionalConfiguration" : "1179658",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "1",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 18,
+          "BTTShortcutAdvancedModifierKeys" : "1179658",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 4,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764354495.1799979,
+              "BTTTriggerParentUUID" : "25D198E0-28CF-401F-ACA0-18034F04FBD5",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "F7F2C3B2-9C00-45F0-A43D-7A8FE095318E",
+              "BTTPredefinedActionType" : 216,
+              "BTTPredefinedActionName" : "Move Window To Desktop 1",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834748,
+          "BTTTriggerType" : 102,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Up",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "86931860-1F76-482C-B892-A0E9ECC4C8FF",
+          "BTTOrder" : 4,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1793001447.9888659,
+              "BTTTriggerParentUUID" : "86931860-1F76-482C-B892-A0E9ECC4C8FF",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "AB741E2B-76A7-4205-B7AF-AF521FC1270C",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/rift-cli execute workspace prev",
+              "BTTOrder" : 15
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.383482,
+          "BTTTriggerType" : 103,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Down",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "4DE1C25D-454C-4F27-AB95-89001AF226F8",
+          "BTTEnabled2" : 0,
+          "BTTOrder" : 5,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764845615.9876199,
+              "BTTTriggerParentUUID" : "4DE1C25D-454C-4F27-AB95-89001AF226F8",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "26F2B9A6-3CAA-4F8E-891F-7D44F0F629B7",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute layout toggle-orientation",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 3
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "FF4302B2-EB21-483F-9992-91DB21DB958F",
+          "BTTAdditionalConfiguration" : "1179658",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "2",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 19,
+          "BTTShortcutAdvancedModifierKeys" : "1179658",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 5,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764354523.4410729,
+              "BTTTriggerParentUUID" : "FF4302B2-EB21-483F-9992-91DB21DB958F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "B2642AC1-0396-4A16-A1B6-8314F4B79EEF",
+              "BTTPredefinedActionType" : 217,
+              "BTTPredefinedActionName" : "Move Window To Desktop 2",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835059,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "05AD61F2-A3AE-4CD1-8FA3-7E96FEE73DAC",
+          "BTTAdditionalConfiguration" : "1179658",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "3",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 20,
+          "BTTShortcutAdvancedModifierKeys" : "1179658",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 6,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764354540.615047,
+              "BTTTriggerParentUUID" : "05AD61F2-A3AE-4CD1-8FA3-7E96FEE73DAC",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "2F7EEE89-8DF4-4ED4-8A67-DA0E041CD6F7",
+              "BTTPredefinedActionType" : 218,
+              "BTTPredefinedActionName" : "Move Window To Desktop 3",
+              "BTTOrder" : 6
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834882,
+          "BTTTriggerType" : 119,
+          "BTTTriggerTypeDescriptionReadOnly" : "Scroll Up (modifier key needed)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "2A3179E2-AD79-4F59-91A9-F460A2009889",
+          "BTTEnabled2" : 0,
+          "BTTRequiredModifierKeys" : 8388608,
+          "BTTOrder" : 6,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764852139.0658422,
+              "BTTTriggerParentUUID" : "2A3179E2-AD79-4F59-91A9-F460A2009889",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "A31E2679-E80D-48B1-859E-AC2E0A929F4A",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute window resize-grow   ",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 8
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236155.3834939,
+          "BTTTriggerType" : 120,
+          "BTTTriggerTypeDescriptionReadOnly" : "Scroll Down (modifier key needed)",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "000803E1-0D17-430D-AD9F-80DDE78EEA80",
+          "BTTEnabled2" : 0,
+          "BTTRequiredModifierKeys" : 8388608,
+          "BTTOrder" : 7,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764852199.931865,
+              "BTTTriggerParentUUID" : "000803E1-0D17-430D-AD9F-80DDE78EEA80",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "30F00C01-8535-40A6-9376-D2DB01844B8A",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift-cli execute window resize-shrink",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 9
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.283428,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "C42E75D5-97C3-4584-A97A-52A0737F2B7F",
+          "BTTAdditionalConfiguration" : "1179658",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "4",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 21,
+          "BTTShortcutAdvancedModifierKeys" : "1179658",
+          "BTTShortcutModifierKeys" : 655360,
+          "BTTOrder" : 7,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764354591.1295629,
+              "BTTTriggerParentUUID" : "C42E75D5-97C3-4584-A97A-52A0737F2B7F",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "EB2C0024-8FF5-403D-B577-18E5DD864350",
+              "BTTPredefinedActionType" : 219,
+              "BTTPredefinedActionName" : "Move Window To Desktop 4",
+              "BTTOrder" : 7
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236132.6342511,
+          "BTTTriggerType" : 101,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Right",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "B002936B-FA5C-41EE-9CAF-CF05088DA74A",
+          "BTTOrder" : 8,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1794236142.816468,
+              "BTTTriggerParentUUID" : "B002936B-FA5C-41EE-9CAF-CF05088DA74A",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "3AD463EC-088B-41EB-AE5E-2183F189B63B",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/rift-cli execute window next",
+              "BTTOrder" : 16
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834711,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "D63434DB-D7E8-4C08-AB62-0C23D0AE5294",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutKeyboardType" : 2697,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "e",
+          "BTTShortcutKeyCode" : 14,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 8,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1768052943.1949639,
+              "BTTTriggerParentUUID" : "D63434DB-D7E8-4C08-AB62-0C23D0AE5294",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "DBDD2B64-6BA2-49E6-B9ED-07654A60C682",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "#!/bin/bash\n\nosascript <<'APPLESCRIPT'\ntell application \"Finder\"\n    make new Finder window\n    activate\nend tell\nAPPLESCRIPT\n",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834449,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "29ED7B2A-3D4B-4A4D-A3B3-02E33B024AE1",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "r",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 15,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 9,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764445099.8180032,
+              "BTTTriggerParentUUID" : "29ED7B2A-3D4B-4A4D-A3B3-02E33B024AE1",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "01E1B961-1B9E-4DE4-A3BB-440316AADB1F",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "open -n -a Kitty\n",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 6
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1794236151.807708,
+          "BTTTriggerType" : 100,
+          "BTTTriggerTypeDescriptionReadOnly" : "3 Finger Swipe Left",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchpadAll",
+          "BTTUUID" : "3814461B-6647-4B5F-A091-5C9B81C62EE4",
+          "BTTOrder" : 9,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1794236160.311799,
+              "BTTTriggerParentUUID" : "3814461B-6647-4B5F-A091-5C9B81C62EE4",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "1D6864B0-44C3-48A8-BB75-673A7AE93BD9",
+              "BTTPredefinedActionType" : 137,
+              "BTTPredefinedActionName" : "Execute Terminal Command (Async, non-blocking)",
+              "BTTTerminalCommand" : "/opt/homebrew/bin/rift-cli execute window prev",
+              "BTTOrder" : 16
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835569,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "06F6D011-8C93-4206-A70A-DBDAFF8DBEC4",
+          "BTTAdditionalConfiguration" : "0",
+          "BTTShortcutScope" : 0,
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "ESCAPE",
+          "BTTShortcutKeyCode" : 53,
+          "BTTShortcutAdvancedModifierKeys" : "0",
+          "BTTShortcutModifierKeys" : 0,
+          "BTTOrder" : 10,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764513768.757345,
+              "BTTTriggerParentUUID" : "06F6D011-8C93-4206-A70A-DBDAFF8DBEC4",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "B7E79BC0-6FD2-46E1-9E90-344A619D8A88",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "ESCAPE",
+              "BTTShortcutToSend" : "63,53",
+              "BTTOrder" : 4
+            }
+          ],
+          "BTTTriggerConfig" : {
+            "BTTKeyboardPreventRecursiveTriggers" : 1
+          }
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834549,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "DFFF9F57-A15C-46FD-8050-06C250F11B33",
+          "BTTAdditionalConfiguration" : "8388608",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "ESCAPE",
+          "BTTShortcutKeyCode" : 53,
+          "BTTShortcutAdvancedModifierKeys" : "8388608",
+          "BTTShortcutModifierKeys" : 8388608,
+          "BTTOrder" : 11,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764513853.269058,
+              "BTTTriggerParentUUID" : "DFFF9F57-A15C-46FD-8050-06C250F11B33",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "21B8609A-F73C-4065-B843-83C3633DBE6A",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "ESCAPE",
+              "BTTShortcutToSend" : "53",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834649,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "3B0B03D8-A8C4-40AC-B3CB-7050EAFA559B",
+          "BTTAdditionalConfiguration" : "1048584",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "w",
+          "BTTShortcutKeyCode" : 13,
+          "BTTShortcutAdvancedModifierKeys" : "1048584",
+          "BTTShortcutModifierKeys" : 524288,
+          "BTTOrder" : 12,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.283514,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "6B2B5067-B214-4963-8692-73F1EEFC00C4",
+          "BTTAdditionalConfiguration" : "655394",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "s",
+          "BTTShortcutKeyCode" : 1,
+          "BTTShortcutAdvancedModifierKeys" : "655394",
+          "BTTShortcutModifierKeys" : 393216,
+          "BTTOrder" : 13,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764950129.568449,
+              "BTTTriggerParentUUID" : "6B2B5067-B214-4963-8692-73F1EEFC00C4",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "9A480F00-168A-4F9F-84B9-360611397A0E",
+              "BTTPredefinedActionType" : 500,
+              "BTTPredefinedActionName" : "Capture Screenshot to Clipboard",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835522,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "63391FE5-9682-4D3B-B208-1C4CB638EEB3",
+          "BTTAdditionalConfiguration" : "393219",
+          "BTTShortcutKeyboardType" : 2697,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "c",
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutAdvancedModifierKeys" : "393219",
+          "BTTShortcutModifierKeys" : 1179648,
+          "BTTOrder" : 14,
+          "BTTAutoAdaptToKeyboardLayout" : 0
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835469,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "82DDF099-FA7D-415E-BE3B-C15A46EE3CC2",
+          "BTTPredefinedActionType" : 560,
+          "BTTPredefinedActionName" : "Close Window, If Last Window => Quit App",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutKeyboardType" : 2697,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "q",
+          "BTTEnabled" : 0,
+          "BTTEnabled2" : 0,
+          "BTTShortcutKeyCode" : 12,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 15,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1764955156.3816299,
+              "BTTTriggerParentUUID" : "82DDF099-FA7D-415E-BE3B-C15A46EE3CC2",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "5E34298C-2A62-4F4F-83E8-88D92F1D5027",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "q",
+              "BTTShortcutToSend" : "55,12",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2834392,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "1E9FAFB3-6C58-48A1-B374-8D8378F13ADC",
+          "BTTAdditionalConfiguration" : "1310729",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "r",
+          "BTTShortcutKeyCode" : 15,
+          "BTTShortcutAdvancedModifierKeys" : "1310729",
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 16,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1765360353.964164,
+              "BTTTriggerParentUUID" : "1E9FAFB3-6C58-48A1-B374-8D8378F13ADC",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "DEC1E6E9-6502-4B99-931B-CC4E20C25A3A",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "/opt/homebrew/bin/rift service restart",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 4
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.2835619,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "A13B3844-ADAE-4CE0-B053-A8E823322978",
+          "BTTAdditionalConfiguration" : "524320",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "r",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 15,
+          "BTTShortcutAdvancedModifierKeys" : "524320",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 17,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1768329466.6224251,
+              "BTTTriggerParentUUID" : "A13B3844-ADAE-4CE0-B053-A8E823322978",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "1937B8A6-D3AF-445C-BBE3-6361F3CEC1E7",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "open -n -a Kitty",
+              "BTTShellTaskIdentifier" : "",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 5
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1771513721.283567,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "1248A3B8-923E-4EBD-A6B9-631DD6A886D6",
+          "BTTAdditionalConfiguration" : "1310729",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "s",
+          "BTTEnabled" : 0,
+          "BTTShortcutKeyCode" : 1,
+          "BTTShortcutAdvancedModifierKeys" : "1310729",
+          "BTTShortcutModifierKeys" : 1572864,
+          "BTTOrder" : 18,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1768329571.155683,
+              "BTTTriggerParentUUID" : "1248A3B8-923E-4EBD-A6B9-631DD6A886D6",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "53ABDFFF-517D-41DE-B18F-868A079C746F",
+              "BTTPredefinedActionType" : 206,
+              "BTTPredefinedActionName" : "Execute Shell Script  or  Task",
+              "BTTShellTaskActionScript" : "open -n -a Safari --args -NewInstance",
+              "BTTShellTaskActionConfig" : "/bin/bash:::-c:::-:::",
+              "BTTOrder" : 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "BT.L",
+      "BTTAppName" : "Recently Used",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTAppAutoInvertIcon" : 1,
+      "BTTTriggers" : [
+        {
+          "BTTLastUpdatedAt" : 1767368469.5415249,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "C9FA9386-675E-4AF0-BC6E-5B0802E2DED8",
+          "BTTAdditionalConfiguration" : "262145",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "c",
+          "BTTEnabled" : 0,
+          "BTTEnabled2" : 0,
+          "BTTShortcutKeyCode" : 8,
+          "BTTShortcutAdvancedModifierKeys" : "262145",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 0,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1767368287.7969379,
+              "BTTTriggerParentUUID" : "C9FA9386-675E-4AF0-BC6E-5B0802E2DED8",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "3AB99AF5-DD25-4242-A088-7048AA299DF0",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "c",
+              "BTTShortcutToSend" : "55,8",
+              "BTTOrder" : 13
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1767368469.541538,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "A7527797-8FC5-463B-BFEE-FDA30E500317",
+          "BTTAdditionalConfiguration" : "262145",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "v",
+          "BTTEnabled" : 0,
+          "BTTEnabled2" : 0,
+          "BTTShortcutKeyCode" : 9,
+          "BTTShortcutAdvancedModifierKeys" : "262145",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 1,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1767368413.474894,
+              "BTTTriggerParentUUID" : "A7527797-8FC5-463B-BFEE-FDA30E500317",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "5BC4B609-21BE-42BB-A814-7D4ED877F461",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "v",
+              "BTTShortcutToSend" : "55,9",
+              "BTTOrder" : 14
+            }
+          ]
+        },
+        {
+          "BTTLastUpdatedAt" : 1767368496.3439231,
+          "BTTTriggerType" : 0,
+          "BTTTriggerClass" : "BTTTriggerTypeKeyboardShortcut",
+          "BTTUUID" : "772D5BEE-4091-4308-93D8-CF3A5EDE51BE",
+          "BTTAdditionalConfiguration" : "262145",
+          "BTTShortcutKeyboardType" : 2302,
+          "BTTTriggerOnDown" : 1,
+          "BTTLayoutIndependentChar" : "x",
+          "BTTEnabled" : 0,
+          "BTTEnabled2" : 0,
+          "BTTShortcutKeyCode" : 7,
+          "BTTShortcutAdvancedModifierKeys" : "262145",
+          "BTTShortcutModifierKeys" : 262144,
+          "BTTOrder" : 2,
+          "BTTAutoAdaptToKeyboardLayout" : 0,
+          "BTTActionsToExecute" : [
+            {
+              "BTTLastUpdatedAt" : 1767368501.1259201,
+              "BTTTriggerParentUUID" : "772D5BEE-4091-4308-93D8-CF3A5EDE51BE",
+              "BTTIsPureAction" : true,
+              "BTTUUID" : "CCC58231-B12D-4520-BB85-57AA12964BAB",
+              "BTTPredefinedActionType" : 264,
+              "BTTPredefinedActionName" : "",
+              "BTTLayoutIndependentActionChar" : "x",
+              "BTTShortcutToSend" : "55,7",
+              "BTTOrder" : 15
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}

@@ -1,7 +1,10 @@
 # BetterTouchTool
 
-BTT speichert seine Kürzel in einer eigenen Datenbank, die sich nicht sinnvoll als Datei versionieren lässt.
-Sicherung über BTT selbst: **Presets → Preset exportieren** und die `.bttpreset`-Datei hier ablegen.
+`btt-preset.bttpreset` enthält alle Trigger (Trackpad-Gesten, Tastenkürzel, Finder-Regeln) und die allgemeinen BTT-Einstellungen.
+Die Lizenz ist **nicht** enthalten.
+
+- **Einspielen:** Datei doppelklicken oder in BTT → Presets → Import.
+- **Aktualisieren:** in BTT → Presets → Export, als `btt/btt-preset.bttpreset` speichern, dann committen.
 
 Wichtige Kürzel (physische Tasten, nach dem Tastentausch):
 | Taste | Aktion |
