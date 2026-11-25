@@ -1,5 +1,7 @@
 # dotfiles – macOS with a Linux feel
 
+![Desktop](assets/screenshot.jpg)
+
 | Folder | Contents |
 |---|---|
 | `rift/` | Rift tiling WM, niri style (scrolling layout, 50 % columns, app rules, key bindings) |
