@@ -28,7 +28,7 @@ fill() {
 import sys, json
 for d in json.load(sys.stdin):
     name = (d.get("name") or d.get("address") or "").replace("\t", " ")
-    print(f"{d.get(\"address\")}\t{int(bool(d.get(\"connected\")))}\t{name}")
+    print("%s\t%d\t%s" % (d.get("address"), int(bool(d.get("connected"))), name))
 ')
   else
     popup_row bluetooth power 󰂲 "Bluetooth einschalten" "$SELF power"

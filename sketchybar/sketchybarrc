@@ -170,3 +170,6 @@ sketchybar --add item gap.pw right --set gap.pw width=6 icon.drawing=off label.d
            --move gap.cc after control_center \
            --move gap.pw after power
 popup_style power
+
+# Beim (Neu-)Laden sofort Bluetooth-Status setzen statt bis zu 30 s zu warten
+sketchybar --trigger bluetooth_change
