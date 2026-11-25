@@ -11,7 +11,7 @@ rsync -a "$C/borders/bordersrc" borders/
 rsync -a "$C/launcher/" launcher/
 /opt/homebrew/bin/brew bundle dump --force --file=Brewfile >/dev/null
 # private/lokale Taps ohne öffentliche Quelle nicht ins Repo
-sed -i '' '/^tap "siuuep\/local"/d' Brewfile
+sed -i '' "/^tap \"$USER\//d" Brewfile   # eigene lokale Taps (benannt nach Benutzer)
 
 # Persönlichen Home-Pfad durch Platzhalter ersetzen (install.sh setzt ihn wieder ein)
 grep -rlF "$HOME" --exclude-dir=.git --exclude=sync.sh --exclude=install.sh . 2>/dev/null \
