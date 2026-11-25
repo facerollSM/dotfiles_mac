@@ -31,7 +31,7 @@ case "$SENDER" in
     trap 'rmdir "$LOCK"' EXIT
     CUR="$(osascript -e 'output volume of (get volume settings)')"
     # Wie die Lautstärketasten: 16 Stufen à 6,25 %, immer auf einer Stufe einrasten
-    NEW=$(/usr/bin/python3 -c "print(round((round($CUR / 6.25) + $DIR) * 6.25))")
+    NEW=$(/usr/bin/python3 -c "import math; s = math.floor($CUR / 6.25 + 0.5) + $DIR; print(math.floor(s * 6.25 + 0.5))")   # kaufmännisch runden wie macOS
     (( NEW < 0 )) && NEW=0
     (( NEW > 100 )) && NEW=100
     osascript -e "set volume output volume $NEW"
