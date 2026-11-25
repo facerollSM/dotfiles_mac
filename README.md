@@ -13,6 +13,7 @@
 | `macos/` | Modifier swap (Ctrl→⌘, ⌘→⌥, ⌥→Ctrl) and faster animations |
 | `btt/` | BetterTouchTool preset and notes |
 | `tools/` | `gruvboxify` – recolor any image (e.g. a wallpaper) to the Gruvbox palette |
+| `assets/` | Screenshot and the Gruvbox wallpaper (`wallpaper-gruvbox.jpg`, made with `gruvboxify`) |
 | `Brewfile` | All Homebrew packages |
 
 ## Usage
