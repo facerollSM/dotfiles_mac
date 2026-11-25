@@ -18,6 +18,9 @@ backup "$C/sketchybar";            rsync -a sketchybar/ "$C/sketchybar/"
 backup "$C/kitty/kitty.conf";      rsync -a kitty/ "$C/kitty/"
 backup "$C/borders/bordersrc";     cp borders/bordersrc "$C/borders/"
 rsync -a launcher/ "$C/launcher/"
+mkdir -p "$C/zsh" && cp zsh/gruvbox.zsh "$C/zsh/"
+grep -q 'config/zsh/gruvbox.zsh' "$HOME/.zshrc" 2>/dev/null || \
+  echo '[[ -f ~/.config/zsh/gruvbox.zsh ]] && source ~/.config/zsh/gruvbox.zsh   # Gruvbox prompt + fzf colors' >> "$HOME/.zshrc"
 # Platzhalter __HOME__ durch den echten Home-Pfad ersetzen
 grep -rlF "__HOME__" "$C/rift" "$C/sketchybar" "$C/kitty" "$C/borders" "$C/launcher" 2>/dev/null \
   | while IFS= read -r f; do sed -i '' "s|__HOME__|$HOME|g" "$f"; done

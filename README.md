@@ -4,11 +4,13 @@
 |---|---|
 | `rift/` | Rift tiling WM, niri style (scrolling layout, 50 % columns, app rules, key bindings) |
 | `sketchybar/` | Bubble bar (Gruvbox): workspaces, media, tray, Bluetooth, Wi‑Fi, volume, battery, calendar, power menu, Control Center, REC indicator; `helpers/*.swift` are compiled on install |
-| `kitty/` | Terminal with Linux-style Ctrl bindings |
+| `kitty/` | Terminal with Linux-style Ctrl bindings, Gruvbox theme |
+| `zsh/` | Gruvbox colors for Powerlevel10k (lean) and fzf, sourced from `~/.zshrc` |
 | `borders/` | Window borders (yellow = focused) |
 | `launcher/` | rofi-like app launcher (choose) on physical ⌥+Space, plus window helpers |
 | `macos/` | Modifier swap (Ctrl→⌘, ⌘→⌥, ⌥→Ctrl) and faster animations |
 | `btt/` | BetterTouchTool preset and notes |
+| `tools/` | `gruvboxify` – recolor any image (e.g. a wallpaper) to the Gruvbox palette |
 | `Brewfile` | All Homebrew packages |
 
 ## Usage
