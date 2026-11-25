@@ -13,7 +13,7 @@ $SB --remove '/tray\.app\..*/' >/dev/null 2>&1 --remove tray >/dev/null 2>&1
 [ -z "$LIST" ] && exit 0
 
 # Abstand zur Nachbar-Bubble
-$SB --add item tray.app.gap right --set tray.app.gap width=2 icon.drawing=off label.drawing=off >/dev/null
+$SB --add item tray.app.gap right --set tray.app.gap width=6 icon.drawing=off label.drawing=off >/dev/null
 ITEMS=()
 i=0
 while IFS=$'\t' read -r id name; do

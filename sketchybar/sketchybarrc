@@ -71,7 +71,7 @@ sketchybar --add item control_center right \
                                 "${BUBBLE[@]}" \
                                 click_script="$PLUGIN_DIR/control_center.sh"
 
-sketchybar --add item gap.cc right --set gap.cc width=6 icon.drawing=off label.drawing=off
+sketchybar --add item gap.cc right --set gap.cc width=4 icon.drawing=off label.drawing=off
 
 # Uhr als eigene Bubble
 sketchybar --add item clock right \
