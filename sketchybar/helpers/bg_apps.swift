@@ -2,7 +2,11 @@
 // und normale Apps ohne sichtbares Fenster (z. B. BTT, Telegram mit geschlossenem Fenster).
 // Ausgabe: bundle-id<TAB>name — Apple-Apps und eingebettete Helfer werden ausgelassen.
 import AppKit
-let skip: Set<String> = ["com.felixkratz.sketchybar"]
+// Nie in der Tray anzeigen
+let skip: Set<String> = [
+    "com.felixkratz.sketchybar",
+    "net.kovidgoyal.kitty",
+]
 
 // PIDs mit normalem, sichtbarem Fenster (Ebene 0)
 let wins = CGWindowListCopyWindowInfo([.optionOnScreenOnly, .excludeDesktopElements], kCGNullWindowID) as? [[String: Any]] ?? []
