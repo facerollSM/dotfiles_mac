@@ -4,3 +4,4 @@ sketchybar/helpers/*
 *.bak*
 .DS_Store
 launcher/close_window
+tools/gruvboxify
