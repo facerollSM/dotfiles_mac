@@ -13,7 +13,7 @@ $SB --remove '/tray\.app\..*/' >/dev/null 2>&1 --remove tray >/dev/null 2>&1
 [ -z "$LIST" ] && exit 0
 
 # Abstand zur Nachbar-Bubble
-$SB --add item tray.app.gap right --set tray.app.gap width=6 icon.drawing=off label.drawing=off >/dev/null
+$SB --add item tray.app.gap right --set tray.app.gap width=2 icon.drawing=off label.drawing=off >/dev/null
 ITEMS=()
 i=0
 while IFS=$'\t' read -r id name; do
@@ -23,14 +23,14 @@ while IFS=$'\t' read -r id name; do
                         icon.background.image="app.$id" icon.background.image.scale=0.6 \
                         icon.background.drawing=on \
                         icon.padding_left=0 icon.padding_right=0 \
-                        padding_left=4 padding_right=4 \
+                        padding_left=2 padding_right=2 \
                         click_script="open -b '$id'" >/dev/null
   ITEMS+=(tray.app.$i)
   i=$((i + 1))
 done <<< "$LIST"
 
 # etwas mehr Luft am Bubble-Rand
-$SB --set "${ITEMS[0]}" padding_right=8 --set "${ITEMS[$((${#ITEMS[@]}-1))]}" padding_left=8 >/dev/null
+$SB --set "${ITEMS[0]}" padding_right=10 --set "${ITEMS[$((${#ITEMS[@]}-1))]}" padding_left=10 >/dev/null
 
 source "$CONFIG_DIR/colors.sh"
 $SB --add bracket tray "${ITEMS[@]}" \
