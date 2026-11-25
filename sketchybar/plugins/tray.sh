@@ -2,6 +2,9 @@
 # „Tray“: Symbole der Apps, die im Hintergrund laufen (ohne Dock-Symbol oder ohne offenes Fenster).
 # Klick auf ein Symbol öffnet/aktiviert die App. Baut die Bubble nur neu, wenn sich die Liste ändert.
 SB=/opt/homebrew/bin/sketchybar
+# Symbol-Stil: gruvbox (einfarbig cremig) | gray (Graustufen) | color (Original-App-Symbole)
+STYLE=gruvbox
+ICONS="$HOME/.cache/sketchybar-tray/$STYLE"
 CACHE=/tmp/sketchybar-tray-list
 LOCK=/tmp/sketchybar-tray.lock
 
@@ -16,8 +19,8 @@ for _ in $(seq 30); do mkdir "$LOCK" 2>/dev/null && break; sleep 0.1; done
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 
 LIST="$("$CONFIG_DIR/helpers/bg_apps")"
-[ -f "$CACHE" ] && [ "$LIST" = "$(cat "$CACHE")" ] && $SB --query tray >/dev/null 2>&1 && exit 0
-echo "$LIST" > "$CACHE"
+[ -f "$CACHE" ] && [ "$STYLE|$LIST" = "$(cat "$CACHE")" ] && $SB --query tray >/dev/null 2>&1 && exit 0
+echo "$STYLE|$LIST" > "$CACHE"
 
 source "$CONFIG_DIR/colors.sh"
 
@@ -29,9 +32,15 @@ if [ -n "$LIST" ]; then
   i=0
   while IFS=$'\t' read -r id name; do
     [ -z "$id" ] && continue
+    if [ "$STYLE" = color ]; then
+      IMG="app.$id"; SCALE=0.6
+    else
+      mkdir -p "$ICONS"; IMG="$ICONS/$id.png"; SCALE=0.3
+      [ -f "$IMG" ] || "$CONFIG_DIR/helpers/tray_icon" "$id" "$STYLE" "$IMG" || { IMG="app.$id"; SCALE=0.6; }
+    fi
     ARGS+=(--add item tray.app.$i right
            --set tray.app.$i label.drawing=off icon.drawing=on icon=""
-                 icon.background.image="app.$id" icon.background.image.scale=0.6
+                 icon.background.image="$IMG" icon.background.image.scale=$SCALE
                  icon.background.drawing=on icon.padding_left=0 icon.padding_right=0
                  padding_left=2 padding_right=2 click_script="open -b '$id'")
     ITEMS+=(tray.app.$i)
