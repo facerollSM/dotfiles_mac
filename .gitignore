@@ -1,0 +1,5 @@
+# kompilierte SketchyBar-Helfer (werden von install.sh gebaut)
+sketchybar/helpers/*
+!sketchybar/helpers/*.swift
+*.bak*
+.DS_Store

@@ -1,0 +1,192 @@
+# rift config — ~/.config/rift/config.toml
+# Backup der alten Version: config.toml.bak-20261125
+
+# ─────────────────────────────────────────────────────────────
+# Allgemein
+# ─────────────────────────────────────────────────────────────
+[settings]
+# Animationen (nur Layout-Änderungen; Workspace-Wechsel sind immer sofort)
+# easing: linear, ease_in_out, ease_{in,out,in_out}_{sine,quad,cubic,quart,quint,expo,circ}
+animate = true
+animation_duration = 0.3
+animation_fps = 120.0
+animation_easing = "ease_in_out"
+
+# false = Rift verwaltet alle Spaces von Anfang an
+default_disable = false
+
+# Fokus & Maus
+focus_follows_mouse = true
+mouse_follows_focus = true
+mouse_hides_on_focus = false
+focus_follows_mouse_disable_hotkey = "cmd"    # gedrückt halten = focus-follows-mouse pausiert
+
+# Bundle-IDs, die keinen Fokus / Workspace-Wechsel auslösen sollen
+auto_focus_blacklist = []
+
+# Befehle beim Start: SketchyBar über Workspace-/Fenster-Änderungen informieren
+run_on_start = [
+  "/opt/homebrew/bin/rift-cli subscribe cli --event workspace_changed --command /bin/sh --args -c --args '/opt/homebrew/bin/sketchybar --trigger rift_workspace_changed'",
+  "/opt/homebrew/bin/rift-cli subscribe cli --event windows_changed --command /bin/sh --args -c --args '/opt/homebrew/bin/sketchybar --trigger rift_workspace_changed'",
+]
+
+hot_reload = true
+
+# ─────────────────────────────────────────────────────────────
+# Layout (niri-ähnliches Scrolling)
+# ─────────────────────────────────────────────────────────────
+[settings.layout]
+mode = "scrolling"   # traditional | bsp | stack | master_stack | scrolling
+
+[settings.layout.scrolling]
+column_width_ratio = 0.5                      # neue Fenster = 50 %
+preserve_window_sizes = false                 # App-eigene Fensterbreite ignorieren
+expand_single_column = true                   # einzelnes Fenster = volle Breite
+focus_navigation_style = "niri"               # nur so weit scrollen wie nötig
+alignment = "left"
+preset_column_widths = [0.333, 0.5, 0.667]    # für switch-preset-column-width
+min_column_width_ratio = 0.2
+max_column_width_ratio = 1.0
+window_insertion_point = "next_to_selection"  # neue Fenster rechts neben dem fokussierten
+
+# Trackpad-Gesten (aktuell über BTT gelöst, daher aus)
+# [settings.layout.scrolling.gestures]
+# enabled = true
+# fingers = 3
+# propagate_to_workspace_swipe = true
+# workspace_switch_threshold = 0.55
+#
+# [settings.gestures]
+# enabled = true
+# fingers = 3
+
+# Abstände (pro Display überschreibbar mit
+# [settings.layout.gaps.per_display."<DISPLAY-UUID>".outer] / .inner)
+[settings.layout.gaps.outer]
+top = 10      # Rift lässt 32 px für die Notch frei → 42 px = unter SketchyBar (38) + 4
+left = 4
+bottom = 4
+right = 4
+
+[settings.layout.gaps.inner]
+horizontal = 12
+vertical = 10
+
+# ─────────────────────────────────────────────────────────────
+# UI
+# ─────────────────────────────────────────────────────────────
+[settings.ui.menu_bar]
+enabled = false            # Workspaces zeigt jetzt SketchyBar
+show_empty = true          # auch leere Workspaces anzeigen
+mode = "all"               # all | active
+active_label = "index"     # index | name (nur bei display_style = "label")
+display_style = "layout"   # layout | label
+
+[settings.ui.mission_control]
+enabled = false            # experimentell
+fade_enabled = true
+fade_duration_ms = 180.0
+
+# ─────────────────────────────────────────────────────────────
+# Workspaces
+# ─────────────────────────────────────────────────────────────
+[virtual_workspaces]
+enabled = true
+default_workspace_count = 4
+default_workspace = 0                     # 0-basiert
+workspace_names = ["first", "second", "third", "fourth"]
+auto_assign_windows = true                # app_rules dürfen Fenster zuweisen
+preserve_focus_per_workspace = false
+workspace_auto_back_and_forth = true      # gleichen Workspace nochmal = zurück zum letzten
+reapply_app_rules_on_title_change = false
+
+# Layout pro Workspace, z. B.:
+# workspace_rules = [
+#   { workspace = 1, layout = "master_stack" },
+# ]
+
+app_rules = [
+	{ app_id = "com.apple.systempreferences", floating = true },
+	{ app_id = "net.briankendall.Proxy-Audio-Device-Settings", floating = true },
+	{ app_id = "com.apple.QuickTimePlayerX", floating = true },
+	{ app_id = "com.colliderli.iina", floating = true },
+	{ app_id = "com.apple.finder", title_substring = "Copy", floating = true },
+	{ app_id = "com.apple.finder", title_substring = "Bin", floating = true },
+	{ app_id = "com.apple.finder", title_regex = " Info$", floating = true },   # Informationsfenster (⌘I)
+	{ app_id = "com.apple.accessibility.universalAccessAuthWarn", floating = true },   # macOS-Berechtigungsdialoge
+	{ app_name = "choose", manage = false },   # rofi-artiger Launcher (⌥+Leertaste): von Rift ignoriert → keine Animation, erscheint mittig
+	# Resolve-Projektfenster liegt auf einer Sonder-Ebene und würde sonst ignoriert (= auf allen Workspaces sichtbar)
+	{ app_id = "com.blackmagic-design.DaVinciResolve", manage = true },
+	{ app_id = "com.blackmagic-design.DaVinciResolve", title_regex = "^Project Manager$", manage = true, floating = true },
+]
+
+[modifier_combinations]
+comb1 = "Ctrl + Shift"
+
+# ─────────────────────────────────────────────────────────────
+# Tastenkürzel  (Modifier: Alt, Ctrl, Shift, Meta/CMD)
+# ─────────────────────────────────────────────────────────────
+[keys]
+# Hinweis: Strg/⌘/⌥ sind systemweit getauscht (physisch Strg→⌘, ⌘→⌥, ⌥→Strg).
+# Die Namen hier sind das, was Rift empfängt: "Ctrl" = physische ⌥ (Super), "CMD" = physische Strg, "Alt" = physische ⌘.
+# Rift
+"Ctrl + ESC" = "toggle_space_activated"
+"Ctrl + CMD + S" = "serialize"
+"Ctrl + CMD + Q" = "save_and_exit"
+
+# Apps starten
+"Ctrl + R" = { exec = "open -n -a Kitty" }
+"Ctrl + Space" = { exec = "__HOME__/.config/launcher/launcher.sh" }   # physisch ⌥+Leertaste: rofi-artiger Launcher
+"Alt + CMD + S" = { exec = "open -n -a Safari --args -NewInstance" }
+
+# Fokus
+"Ctrl + left" = { move_focus = "left" }
+"Ctrl + down" = { move_focus = "down" }
+"Ctrl + up" = { move_focus = "up" }
+"Ctrl + right" = { move_focus = "right" }
+
+# Fenster verschieben
+"Ctrl + CMD + left" = { move_node = "left" }
+"Ctrl + CMD + down" = { move_node = "down" }
+"Ctrl + CMD + up" = { move_node = "up" }
+"Ctrl + CMD + right" = { move_node = "right" }
+
+# Workspaces
+"Alt + CMD + LEFT" = "prev_workspace"
+"Alt + CMD + RIGHT" = "next_workspace"
+
+"Ctrl + 1" = { switch_to_workspace = 0 }
+"Ctrl + 2" = { switch_to_workspace = 1 }
+"Ctrl + 3" = { switch_to_workspace = 2 }
+"Ctrl + 4" = { switch_to_workspace = 3 }
+
+# Fenster in Workspace verschieben und mitgehen
+"Ctrl + Shift + 1" = { exec = "__HOME__/scripts/move_and_follow.sh 0" }
+"Ctrl + Shift + 2" = { exec = "__HOME__/scripts/move_and_follow.sh 1" }
+"Ctrl + Shift + 3" = { exec = "__HOME__/scripts/move_and_follow.sh 2" }
+"Ctrl + Shift + 4" = { exec = "__HOME__/scripts/move_and_follow.sh 3" }
+
+# Displays
+"Ctrl + Shift + left" = { exec = "rift-cli execute display move-window --direction left" }
+"Ctrl + Shift + right" = { exec = "rift-cli execute display move-window --direction right" }
+"Ctrl + Shift + A" = { move_mouse_to_display = 0 }
+"Ctrl + Shift + S" = { move_mouse_to_display = 1 }
+
+# Stacks / Orientierung
+"Ctrl + Comma" = "toggle_stack"
+"Ctrl + j" = "toggle_orientation"
+"Ctrl + CMD + E" = "unjoin_windows"
+
+# Floating / Fullscreen
+"Ctrl + V" = "toggle_window_floating"
+"Ctrl + F" = "toggle_fullscreen"
+"Ctrl + Shift + F" = "toggle_fullscreen_within_gaps"
+"Ctrl + Shift + CMD + Space" = "toggle_focus_floating"
+
+# Größe
+"Ctrl + t" = "resize_window_grow"
+"Ctrl + z" = "resize_window_shrink"
+
+# Mission Control (nur wenn [settings.ui.mission_control] enabled = true)
+# "Ctrl + CMD + Shift + M" = "show_mission_control_current"
+# "Ctrl + CMD + M" = "show_mission_control_all"

@@ -1,0 +1,14 @@
+#!/bin/bash
+# JankyBorders — Gruvbox, passend zu SketchyBar/Kitty
+# Vorher: active_color=0xff689d6a inactive_color=0xff414550 hidpi=off (Backup: bordersrc.bak-2026-11-25)
+
+options=(
+	style=round
+	width=5.0
+	hidpi=on
+	active_color=0xfffabd2f     # gelb = fokussiertes Fenster (wie aktiver Workspace)
+	inactive_color=0xff504945   # grau = alle anderen
+	ax_focus=true
+)
+
+borders "${options[@]}"

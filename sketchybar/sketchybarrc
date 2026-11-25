@@ -1,0 +1,159 @@
+#!/bin/bash
+# SketchyBar — Bubble-Stil (einzelne Pillen, keine durchgehende Leiste), Gruvbox
+# Neu laden: sketchybar --reload
+
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+source "$CONFIG_DIR/colors.sh"
+
+FONT="JetBrainsMono Nerd Font Mono"
+PILL_H=28        # Höhe der Bubbles
+PILL_R=9         # Rundung der Bubbles
+
+# ── Leiste: halbtransparentes dunkles Band (verdeckt die macOS-Menüleiste) ──
+sketchybar --bar position=top height=38 color=0xff1d2021 blur_radius=0 \
+                 shadow=off sticky=on padding_left=6 padding_right=6 \
+                 topmost=on
+
+sketchybar --default updates=when_shown \
+                     icon.font="$FONT:Bold:15.0" \
+                     icon.color=$FG \
+                     label.font="$FONT:Bold:13.0" \
+                     label.color=$FG \
+                     padding_left=2 padding_right=2 \
+                     icon.padding_left=6 icon.padding_right=4 \
+                     label.padding_left=2 label.padding_right=8
+
+# Stil für eine eigenständige Bubble
+BUBBLE=(background.color=$BG1 background.corner_radius=$PILL_R background.height=$PILL_H
+        background.border_color=0xff504945 background.border_width=1 background.drawing=on)
+
+# ── Links: Rift-Workspaces (eine Bubble für alle vier) ──────
+sketchybar --add event rift_workspace_changed
+
+for i in 0 1 2 3; do
+  sketchybar --add item ws.$i left \
+             --set ws.$i icon="$((i + 1))" \
+                         icon.padding_left=10 icon.padding_right=10 \
+                         label.drawing=off \
+                         padding_left=2 padding_right=2 \
+                         background.color=$YELLOW \
+                         background.corner_radius=7 \
+                         background.height=20 \
+                         background.drawing=off \
+                         click_script="/opt/homebrew/bin/rift-cli execute workspace switch $i"
+done
+# Innenabstand der Workspace-Bubble (links/rechts)
+sketchybar --set ws.0 padding_left=6 --set ws.3 padding_right=6
+
+sketchybar --add bracket workspaces ws.0 ws.1 ws.2 ws.3 \
+           --set workspaces "${BUBBLE[@]}"
+
+# Unsichtbares Steuer-Item: aktualisiert alle Workspace-Items auf einmal
+sketchybar --add item ws.ctl left \
+           --set ws.ctl drawing=off updates=on script="$PLUGIN_DIR/rift.sh" \
+           --subscribe ws.ctl rift_workspace_changed system_woke
+
+# Abstand zwischen Workspaces- und App-Bubble
+sketchybar --add item gap.l left --set gap.l width=6 icon.drawing=off label.drawing=off
+
+# ── Links: aktive App (eigene Bubble) ───────────────────────
+sketchybar --add item front_app left \
+           --set front_app icon=󰣆 icon.color=$YELLOW label.color=$FG \
+                           "${BUBBLE[@]}" \
+                           script="$PLUGIN_DIR/front_app.sh" \
+           --subscribe front_app front_app_switched
+
+# ── Rechts (von außen nach innen) ───────────────────────────
+# Kontrollzentrum-Knopf ganz außen
+sketchybar --add item control_center right \
+           --set control_center icon=󰒓 icon.color=$FG label.drawing=off \
+                                icon.padding_left=9 icon.padding_right=9 \
+                                "${BUBBLE[@]}" \
+                                click_script="$PLUGIN_DIR/control_center.sh"
+
+sketchybar --add item gap.cc right --set gap.cc width=6 icon.drawing=off label.drawing=off
+
+# Uhr als eigene Bubble
+sketchybar --add item clock right \
+           --set clock update_freq=10 icon=󰥔 icon.color=$AQUA \
+                       "${BUBBLE[@]}" script="$PLUGIN_DIR/clock.sh"
+
+sketchybar --add item gap.r right --set gap.r width=6 icon.drawing=off label.drawing=off
+
+# Status: Akku, Lautstärke, WLAN in einer gemeinsamen Bubble
+sketchybar --add item battery right \
+           --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
+           --subscribe battery system_woke power_source_change \
+                                                                              \
+           --add item volume right \
+           --set volume script="$PLUGIN_DIR/volume.sh" \
+           --subscribe volume volume_change mouse.scrolled \
+                                                                              \
+           --add item wifi right \
+           --set wifi update_freq=30 script="$PLUGIN_DIR/wifi.sh" \
+                      icon.padding_left=10 \
+           --subscribe wifi wifi_change system_woke
+
+sketchybar --add bracket status wifi volume battery \
+           --set status "${BUBBLE[@]}"
+
+sketchybar --update
+
+# ── Klick-Aktionen ──────────────────────────────────────────
+sketchybar --set wifi      click_script="$PLUGIN_DIR/wifi_popup.sh" \
+           --set volume    click_script="$PLUGIN_DIR/volume_popup.sh" \
+           --set battery   click_script="$PLUGIN_DIR/battery_popup.sh" \
+           --set clock     click_script="$PLUGIN_DIR/calendar_popup.sh" \
+           --set front_app click_script='/opt/homebrew/bin/rift-cli execute window toggle-float'
+
+# ── WLAN-Popup (Liste der Netze) ────────────────────────────
+sketchybar --set wifi popup.align=right popup.y_offset=4 \
+                      popup.background.color=$BG1 \
+                      popup.background.corner_radius=$PILL_R \
+                      popup.background.border_color=0xff504945 \
+                      popup.background.border_width=1 \
+           --subscribe wifi mouse.exited.global
+
+# ── Akku- und Kalender-Popup ────────────────────────────────
+source "$PLUGIN_DIR/popup_lib.sh"
+popup_style battery
+popup_style clock
+popup_style volume
+sketchybar --subscribe battery mouse.exited.global \
+           --subscribe clock   mouse.exited.global \
+           --subscribe volume  mouse.exited.global
+
+# ── Medien (links, nur sichtbar wenn etwas läuft) ───────────
+sketchybar --add item gap.m left --set gap.m width=6 icon.drawing=off label.drawing=off \
+           --add item media left \
+           --set media drawing=off updates=on "${BUBBLE[@]}" \
+                       label.max_chars=40 script="$PLUGIN_DIR/media.sh" \
+           --subscribe media media_change mouse.clicked mouse.scrolled
+
+# ── Aufnahme-Anzeige (rechts, nur sichtbar während einer Bildschirmaufnahme) ──
+sketchybar --add item recording right \
+           --set recording drawing=off updates=on update_freq=2 \
+                           icon=󰑊 icon.color=$BG label="REC" label.color=$BG \
+                           background.color=$RED background.corner_radius=$PILL_R \
+                           background.height=$PILL_H background.drawing=on \
+                           script="$PLUGIN_DIR/recording.sh" \
+           --subscribe recording mouse.clicked
+
+# ── Bluetooth (in die Status-Bubble neben WLAN) ─────────────
+sketchybar --add event bluetooth_change \
+           --add item bluetooth right \
+           --set bluetooth update_freq=30 script="$PLUGIN_DIR/bluetooth.sh" \
+                           click_script="$PLUGIN_DIR/bluetooth_popup.sh" \
+           --subscribe bluetooth bluetooth_change system_woke mouse.exited.global
+popup_style bluetooth
+
+# Status-Bubble neu bilden, damit Bluetooth mit drin ist
+sketchybar --remove status \
+           --add bracket status bluetooth wifi volume battery \
+           --set status "${BUBBLE[@]}"
+
+# ── Tray: Apps im Hintergrund (BTT, Telegram ohne Fenster …) ──
+sketchybar --add item tray.ctl right \
+           --set tray.ctl drawing=off updates=on update_freq=15 script="$PLUGIN_DIR/tray.sh" \
+           --subscribe tray.ctl front_app_switched system_woke
+rm -f /tmp/sketchybar-tray-list
