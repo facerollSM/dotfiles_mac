@@ -1,7 +1,8 @@
 #!/bin/bash
 # Bringt die Configs aus dem Repo an ihren Platz (vorhandene Dateien werden nach *.bak-<Datum> gesichert).
 #   ./install.sh            → nur Configs
-#   ./install.sh --brew     → zusätzlich alle Pakete aus dem Brewfile installieren
+#   ./install.sh --brew     → also install the core packages (Brewfile.core)
+#   ./install.sh --brew-all → also install everything from the full Brewfile
 #   ./install.sh --macos    → zusätzlich Tastentausch + Animations-Einstellungen anwenden
 set -e
 cd "$(dirname "$0")"
@@ -9,7 +10,8 @@ C="$HOME/.config"; STAMP="$(date +%Y%m%d-%H%M%S)"
 
 backup() { [ -e "$1" ] && cp -Rp "$1" "$1.bak-$STAMP" && echo "  gesichert: $1.bak-$STAMP" || true; }
 
-[[ " $* " == *" --brew "* ]] && /opt/homebrew/bin/brew bundle --file=Brewfile
+[[ " $* " == *" --brew "* ]]     && /opt/homebrew/bin/brew bundle --file=Brewfile.core
+[[ " $* " == *" --brew-all "* ]] && /opt/homebrew/bin/brew bundle --file=Brewfile
 
 echo "Configs kopieren …"
 mkdir -p "$C"/{rift,sketchybar,kitty,borders,launcher}
@@ -34,6 +36,8 @@ for s in "$C"/sketchybar/helpers/*.swift "$C"/launcher/*.swift; do swiftc -O "$s
 [[ " $* " == *" --macos "* ]] && ./macos/keyboard.sh && ./macos/animations.sh
 
 echo "Dienste neu starten …"
+/opt/homebrew/bin/rift service install >/dev/null 2>&1 || true
+/opt/homebrew/bin/rift service start   >/dev/null 2>&1 || true
 /opt/homebrew/bin/brew services restart sketchybar >/dev/null || true
 /opt/homebrew/bin/brew services restart borders   >/dev/null || true
 /opt/homebrew/bin/rift-cli execute config reload  >/dev/null 2>&1 || true

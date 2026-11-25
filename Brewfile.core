@@ -1,0 +1,25 @@
+# Core packages for this setup (installed by: ./install.sh --brew)
+# The full list of everything on the original machine is in ./Brewfile (./install.sh --brew-all).
+
+# ── Taps ────────────────────────────────────────────────
+tap "felixkratz/formulae"          # SketchyBar, JankyBorders
+tap "acsandmann/tap"               # Rift
+
+# ── Window management & bar ─────────────────────────────
+brew "acsandmann/tap/rift", trusted: true        # tiling window manager (niri-style scrolling)
+brew "felixkratz/formulae/sketchybar", trusted: true   # status bar
+brew "felixkratz/formulae/borders", trusted: true      # window borders (JankyBorders)
+
+# ── Helpers used by SketchyBar / launcher ───────────────
+brew "blueutil"         # Bluetooth popup
+brew "switchaudio-osx"  # audio output/input switching in the volume popup
+brew "choose-gui"       # rofi-like launcher (⌥+Space)
+
+# ── Terminal & shell ────────────────────────────────────
+cask "kitty"                          # terminal
+cask "font-jetbrains-mono-nerd-font"  # font for kitty and SketchyBar icons
+brew "fzf"                            # fuzzy finder (Gruvbox colors in zsh/gruvbox.zsh)
+brew "fastfetch"                      # system info (optional)
+
+# ── Input ───────────────────────────────────────────────
+cask "bettertouchtool"   # gestures, ⌘+Tab switcher, Ctrl+Tab (license required)

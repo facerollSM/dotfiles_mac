@@ -17,11 +17,34 @@
 | `assets/` | Screenshot and the Gruvbox wallpaper (`wallpaper-gruvbox.jpg`, made with `gruvboxify`) |
 | `Brewfile` | All Homebrew packages |
 
+## Packages
+
+Installed by `./install.sh --brew` from [`Brewfile.core`](Brewfile.core):
+
+| Package | Used for |
+|---|---|
+| `rift` (tap `acsandmann/tap`) | Tiling window manager. Can also be built from source: <https://github.com/acsandmann/rift> |
+| `sketchybar`, `borders` (tap `felixkratz/formulae`) | Status bar and window borders |
+| `blueutil` | Bluetooth popup in the bar |
+| `switchaudio-osx` | Audio device switching in the volume popup |
+| `choose-gui` | rofi-like launcher (⌥+Space) |
+| `kitty`, `font-jetbrains-mono-nerd-font` | Terminal and font (also used for bar icons) |
+| `fzf`, `fastfetch` | Fuzzy finder, system info |
+| `bettertouchtool` | Gestures, ⌘+Tab switcher, Ctrl+Tab (needs a license) |
+
+Not from Homebrew – install once by hand:
+- **Oh My Zsh**: <https://ohmyz.sh>
+- **Powerlevel10k**: `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k`, then `p10k configure` (lean style)
+- **Xcode Command Line Tools** (for the Swift helpers): `xcode-select --install`
+
+`Brewfile` is the complete package list of the original machine (`./install.sh --brew-all`).
+
 ## Usage
 ```bash
 ./sync.sh                     # system → repo (then commit)
 ./install.sh                  # repo → system
-./install.sh --brew --macos   # fresh Mac: also install packages and apply macOS settings
+./install.sh --brew --macos   # fresh Mac: core packages + macOS settings
+./install.sh --brew-all       # everything from the full Brewfile
 ```
 
 Personal home paths are stored as `__HOME__` in the repo; `install.sh` replaces them with your `$HOME`.
