@@ -30,7 +30,7 @@ case "$SENDER" in
     mkdir "$LOCK" 2>/dev/null || exit 0
     trap 'rmdir "$LOCK"' EXIT
     CUR="$(osascript -e 'output volume of (get volume settings)')"
-    STEP=$(( DIR * 3 ))   # 3 % pro Scroll-Schritt
+    STEP=$(( DIR * 5 ))   # 5 % pro Scroll-Schritt
     NEW=$(( CUR + STEP ))
     (( NEW < 0 )) && NEW=0
     (( NEW > 100 )) && NEW=100
