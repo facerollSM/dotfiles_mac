@@ -2,6 +2,11 @@
 # „Tray“: Symbole der Apps, die im Hintergrund laufen (ohne Dock-Symbol oder ohne offenes Fenster).
 # Klick auf ein Symbol öffnet/aktiviert die App. Baut die Bubble nur neu, wenn sich die Liste ändert.
 SB=/opt/homebrew/bin/sketchybar
+
+# Nach einer Fensteränderung beendet sich die App oft erst kurz danach → 1,5 s später nochmal prüfen
+if [ "$SENDER" = "rift_workspace_changed" ]; then
+  ( sleep 1.5; SENDER=recheck "$0" ) >/dev/null 2>&1 &
+fi
 CACHE=/tmp/sketchybar-tray-list
 
 LIST="$("$CONFIG_DIR/helpers/bg_apps")"

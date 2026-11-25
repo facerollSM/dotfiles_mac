@@ -155,8 +155,8 @@ sketchybar --remove status \
 
 # ── Tray: Apps im Hintergrund (BTT, Telegram ohne Fenster …) ──
 sketchybar --add item tray.ctl right \
-           --set tray.ctl drawing=off updates=on update_freq=15 script="$PLUGIN_DIR/tray.sh" \
-           --subscribe tray.ctl front_app_switched system_woke
+           --set tray.ctl drawing=off updates=on update_freq=10 script="$PLUGIN_DIR/tray.sh" \
+           --subscribe tray.ctl front_app_switched system_woke rift_workspace_changed
 rm -f /tmp/sketchybar-tray-list
 
 # ── Power-Menü (ganz rechts außen) ──────────────────────────
