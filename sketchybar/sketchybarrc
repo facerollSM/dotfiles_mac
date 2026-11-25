@@ -157,3 +157,16 @@ sketchybar --add item tray.ctl right \
            --set tray.ctl drawing=off updates=on update_freq=15 script="$PLUGIN_DIR/tray.sh" \
            --subscribe tray.ctl front_app_switched system_woke
 rm -f /tmp/sketchybar-tray-list
+
+# ── Power-Menü (ganz rechts außen) ──────────────────────────
+sketchybar --add item gap.pw right --set gap.pw width=6 icon.drawing=off label.drawing=off \
+           --add item power right \
+           --set power icon=󰐥 icon.color=$RED label.drawing=off \
+                       icon.padding_left=9 icon.padding_right=9 \
+                       "${BUBBLE[@]}" \
+                       click_script="$PLUGIN_DIR/power_popup.sh" script="$PLUGIN_DIR/power.sh" \
+           --subscribe power mouse.exited.global \
+           --move power after control_center \
+           --move gap.cc after control_center \
+           --move gap.pw after power
+popup_style power
