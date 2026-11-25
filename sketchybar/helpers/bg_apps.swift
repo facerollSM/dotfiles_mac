@@ -19,8 +19,10 @@ for w in wins where (w[kCGWindowLayer as String] as? Int) == 0 {
 var seen = Set<String>()
 for app in NSWorkspace.shared.runningApplications where app.activationPolicy != .prohibited {
     guard let id = app.bundleIdentifier, !id.hasPrefix("com.apple."), !skip.contains(id),
-          let url = app.bundleURL, url.pathExtension == "app",
-          !url.path.contains(".app/Contents/"),
+          let url = app.bundleURL,
+          // echtes App-Paket (auch ohne .app-Endung, z. B. Steam), aber nichts, was in einem anderen Paket steckt
+          FileManager.default.fileExists(atPath: url.appendingPathComponent("Contents/Info.plist").path),
+          !url.deletingLastPathComponent().path.contains("/Contents"),
           !seen.contains(id) else { continue }
     if app.activationPolicy == .regular && withWindow.contains(app.processIdentifier) { continue }
     seen.insert(id)
