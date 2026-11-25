@@ -8,6 +8,4 @@ H="$CONFIG_DIR/helpers"
 # War es beim Klick offen? Dann hat der Klick es bereits geschlossen – nicht wieder öffnen.
 "$H/cc_visible" && exit 0
 
-# kurz warten, bis der Klick abgeschlossen ist – sonst schließt er das Kontrollzentrum gleich wieder
-sleep 0.15
 "$H/open_cc"
