@@ -6,7 +6,7 @@ Sicherung über BTT selbst: **Presets → Preset exportieren** und die `.bttpres
 Wichtige Kürzel (physische Tasten, nach dem Tastentausch):
 | Taste | Aktion |
 |---|---|
-| ⌥+Q | (deaktiviert – übernimmt jetzt Rift + launcher/close_window: schließt nur das Fenster) |
+| ⌥+Q | (deaktiviert – übernimmt jetzt Rift + launcher/close_window: schließt das Fenster, beim letzten Fenster App beenden – Safari/Finder laufen weiter) |
 | ⌥+E | Datei-Explorer (Terminal-Befehl) |
 | ⌘+Tab | BTT-Fenster-Umschalter (alle Apps) |
 | Strg+Tab / Strg+Shift+Tab | sendet Strg+Tab / Strg+Shift+Tab (Tabs wechseln) |
