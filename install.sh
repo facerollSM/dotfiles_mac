@@ -19,6 +19,8 @@ backup "$C/kitty/kitty.conf";      rsync -a kitty/ "$C/kitty/"
 backup "$C/borders/bordersrc";     cp borders/bordersrc "$C/borders/"
 rsync -a launcher/ "$C/launcher/"
 mkdir -p "$C/zsh" && cp zsh/gruvbox.zsh "$C/zsh/"
+VSC="$HOME/Library/Application Support/Code/User"
+mkdir -p "$VSC"; backup "$VSC/keybindings.json"; cp vscode/keybindings.json "$VSC/"
 grep -q 'config/zsh/gruvbox.zsh' "$HOME/.zshrc" 2>/dev/null || \
   echo '[[ -f ~/.config/zsh/gruvbox.zsh ]] && source ~/.config/zsh/gruvbox.zsh   # Gruvbox prompt + fzf colors' >> "$HOME/.zshrc"
 # Platzhalter __HOME__ durch den echten Home-Pfad ersetzen

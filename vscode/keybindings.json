@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+// Strg sendet systemweit ⌘ (Tastentausch). Alte Strg-Kürzel: keybindings.json.bak-2026-11-25
+[
+    // Strg+H (= ⌘+H) → Suchen & Ersetzen wie unter Linux, statt „VS Code ausblenden“
+    {
+        "key": "cmd+h",
+        "command": "editor.action.startFindReplaceAction",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.replaceInFiles",
+        "when": "!editorFocus && !editorIsOpen"
+    },
+    // physisch ⌘+Shift+↑/↓ (= ⌥+Shift+↑/↓) → zusätzliche Cursor über/unter (Mehrfach-Bearbeitung)
+    {
+        "key": "alt+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    // bisherige Belegung (Zeile kopieren) auf dieser Taste entfernen
+    {
+        "key": "alt+shift+up",
+        "command": "-editor.action.copyLinesUpAction"
+    },
+    {
+        "key": "alt+shift+down",
+        "command": "-editor.action.copyLinesDownAction"
+    }
+]

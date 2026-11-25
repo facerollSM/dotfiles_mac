@@ -10,6 +10,7 @@ rsync -a --delete --exclude '*.bak' "$C/kitty/" kitty/
 rsync -a "$C/borders/bordersrc" borders/
 rsync -a "$C/launcher/" launcher/
 rsync -a "$C/zsh/gruvbox.zsh" zsh/
+rsync -a "$HOME/Library/Application Support/Code/User/keybindings.json" vscode/
 /opt/homebrew/bin/brew bundle dump --force --file=Brewfile >/dev/null
 # private/lokale Taps ohne öffentliche Quelle nicht ins Repo
 sed -i '' "/^tap \"$USER\//d" Brewfile   # eigene lokale Taps (benannt nach Benutzer)
