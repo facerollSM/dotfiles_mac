@@ -11,6 +11,7 @@
 | `zsh/` | Gruvbox colors for Powerlevel10k (lean) and fzf, sourced from `~/.zshrc` |
 | `borders/` | Window borders (yellow = focused) |
 | `launcher/` | rofi-like app launcher (choose) on physical ⌥+Space, plus window helpers |
+| `scripts/` | Helper scripts called from Rift/BTT bindings (e.g. `move_and_follow.sh`), copied to `~/scripts` |
 | `macos/` | Modifier swap (Ctrl→⌘, ⌘→⌥, ⌥→Ctrl) and faster animations |
 | `btt/` | BetterTouchTool preset and notes |
 | `tools/` | `gruvboxify` – recolor any image (e.g. a wallpaper) to the Gruvbox palette |

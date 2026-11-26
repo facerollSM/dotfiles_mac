@@ -40,6 +40,7 @@ backup "$C/sketchybar";            rsync -a sketchybar/ "$C/sketchybar/"
 backup "$C/kitty/kitty.conf";      rsync -a kitty/ "$C/kitty/"
 backup "$C/borders/bordersrc";     cp borders/bordersrc "$C/borders/"
 rsync -a launcher/ "$C/launcher/"
+mkdir -p "$HOME/scripts" && rsync -a scripts/ "$HOME/scripts/"   # von Rift-/BTT-Kürzeln aufgerufen (__HOME__/scripts/…)
 mkdir -p "$C/zsh" && cp zsh/gruvbox.zsh "$C/zsh/"
 VSC="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSC"; backup "$VSC/keybindings.json"; cp vscode/keybindings.json "$VSC/"

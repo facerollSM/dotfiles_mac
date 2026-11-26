@@ -163,7 +163,6 @@ comb1 = "Ctrl + Shift"
 
 # Fenster in Workspace verschieben und mitgehen
 "Ctrl + Shift + 1" = { exec = "__HOME__/scripts/move_and_follow.sh 0" }
-"Ctrl + Shift + 1" = { exec = "__HOME__/scripts/move_and_follow.sh 0" }
 "Ctrl + Shift + 2" = { exec = "__HOME__/scripts/move_and_follow.sh 1" }
 "Ctrl + Shift + 3" = { exec = "__HOME__/scripts/move_and_follow.sh 2" }
 "Ctrl + Shift + 4" = { exec = "__HOME__/scripts/move_and_follow.sh 3" }
