@@ -40,15 +40,16 @@ backup "$C/sketchybar";            rsync -a sketchybar/ "$C/sketchybar/"
 backup "$C/kitty/kitty.conf";      rsync -a kitty/ "$C/kitty/"
 backup "$C/borders/bordersrc";     cp borders/bordersrc "$C/borders/"
 rsync -a launcher/ "$C/launcher/"
-mkdir -p "$HOME/scripts" && rsync -a scripts/ "$HOME/scripts/"   # von Rift-/BTT-Kürzeln aufgerufen (__HOME__/scripts/…)
 mkdir -p "$C/zsh" && cp zsh/gruvbox.zsh "$C/zsh/"
 VSC="$HOME/Library/Application Support/Code/User"
 mkdir -p "$VSC"; backup "$VSC/keybindings.json"; cp vscode/keybindings.json "$VSC/"
 grep -q 'config/zsh/gruvbox.zsh' "$HOME/.zshrc" 2>/dev/null || \
   echo '[[ -f ~/.config/zsh/gruvbox.zsh ]] && source ~/.config/zsh/gruvbox.zsh   # Gruvbox prompt + fzf colors' >> "$HOME/.zshrc"
-# Platzhalter __HOME__ durch den echten Home-Pfad ersetzen
-grep -rlF "__HOME__" "$C/rift" "$C/sketchybar" "$C/kitty" "$C/borders" "$C/launcher" 2>/dev/null \
-  | while IFS= read -r f; do sed -i '' "s|__HOME__|$HOME|g" "$f"; done
+# Platzhalter ersetzen: __HOME__ → Home-Pfad, __DOTFILES__ → Pfad dieses Repos (z. B. für scripts/)
+DOTFILES="$(pwd -P)"
+grep -rlE "__HOME__|__DOTFILES__" "$C/rift" "$C/sketchybar" "$C/kitty" "$C/borders" "$C/launcher" 2>/dev/null \
+  | while IFS= read -r f; do sed -i '' -e "s|__HOME__|$HOME|g" -e "s|__DOTFILES__|$DOTFILES|g" "$f"; done
+chmod +x scripts/*.sh
 chmod +x "$C"/sketchybar/sketchybarrc "$C"/sketchybar/plugins/*.sh "$C"/launcher/*.sh "$C"/borders/bordersrc
 
 echo "SketchyBar-Helfer bauen …"
